@@ -29,7 +29,9 @@ class ComicsList extends StatelessWidget {
             final serie = list[index];
             final imageUrl =
                 serie.thumbnail.path + "." + serie.thumbnail.extension;
-            return Image.network(imageUrl);
+            return Container(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.network(imageUrl,fit: BoxFit.contain,));
           },
         );
       },

@@ -3,7 +3,7 @@ import 'package:marvel/models/response_characters.dart';
 import 'package:marvel/models/serie.dart';
 import 'package:marvel/models/tmp.dart';
 import 'package:marvel/utilities/utilities.dart';
-import 'package:marvel/utilities/secret.dart';
+import 'package:marvel/utilities/secrets.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 

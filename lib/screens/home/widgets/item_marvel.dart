@@ -12,12 +12,14 @@ class ItemMarvel extends StatelessWidget {
   Widget build(BuildContext context) {
     final bloc = BlocProvider.of<CharactersBloc>(context);
     return ListTile(
-      title: Text(character.name),
+      title: Text(character.name,style: TextStyle(fontWeight: FontWeight.bold),),
       subtitle: Text(character.description),
       leading: Container(
-        child: CircleAvatar(
-          backgroundColor: Colors.red,
-          radius: 20.0,
+        height: 50.0,
+        width: 50.0,
+        child: ClipOval(
+//          backgroundColor: Colors.red,
+//          radius: 30.0,
           child: Image.network(
             character.thumbnail.path + "." + character.thumbnail.extension,
             fit: BoxFit.cover,
